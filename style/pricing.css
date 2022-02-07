@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --enterprice-bg: linear-gradient(
+    180deg,
+    #f7f7f7 0%,
+    rgba(247, 247, 247, 0) 100%
+  );
+  --bg-color: #02897a;
+  --padding-herobtn: 15px 40px;
+  --padding-headerbtn: 10px 24px;
+  /*section title*/
+  --outer-titlesize: 32px;
+  --outer-titleheight: 48px;
+  --outer-titleweight: 700;
+
+  /*section title*/
+  /*specifics*/
+  --specifics-titlesize: 24px;
+  --specifics-titleheight: 33px;
+  --specifics-titleweight: 600;
+
+  --specifics-textsize: 16px;
+  --specifics-textheight: 26px;
+  --specifics-textweight: 400;
+  /*specifics*/
+  /*managment*/
+  --management-textsize: 16px;
+  --management-textheight: 24px;
+  --management-textweight: 600;
+
+  --managment-subtitlesize: 16px;
+  --managment-subtitleheight: 26px;
+  --managment-subtitleweight: 600;
+  /*managment*/
+  /* hero */
+  --text-text-hero: 18px;
+  --height-text-hero: 28px;
+  --weight-text-hero: 400;
+
+  --text-title-hero: 38px;
+  --height-title-hero: 60px;
+  --weight-title-hero: 700;
+  /* hero */
+  --bg-color: #02897a;
+
+  --inner-titlesize: 24px;
+  --inner-titleheight: 40px;
+  --inner-titleweight: 700;
+}
+
+.dark {
+  --enterprice-bg: #22343d;
+  --menu-bgcolor: #173a56;
+  --body-background: #1f2e35;
+  --text-color: #fff;
+  --slider-background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*pricing*/
+
+.pricee-up h4 {
+  font-size: var(--specifics-titlesize);
+  line-height: var(--specifics-titleheight);
+  font-weight: var(--specifics-titleweight);
+  color: var(--text-color);
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+/*enterprice*/
+
+.enterprice {
+  position: relative;
+  background: var(--enterprice-bg);
+  padding: 75px 50px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.enterprice-inner h4 {
+  font-size: var(--specifics-titlesize);
+  line-height: var(--specifics-titleheight);
+  font-weight: var(--specifics-titleweight);
+  margin: 0 0 16px 0;
+}
+
+.enterprice-inner h1,
+.support-title {
+  font-size: var(--outer-titlesize);
+  line-height: var(--outer-titleheight);
+  font-weight: var(--outer-titleweight);
+  margin: 0 0 8px 0;
+}
+
+.enterprice-inner p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  margin: 0 0 32px 0;
+}
+
+.support-title {
+  margin: 0 0 56px 0;
+}
+
+.effects-title {
+  margin: 0 0 30px 0;
+}
+
+.effect-subtitle {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.effect-subtitle img {
+  width: 50px;
+  height: 50px;
+}
+
+.effect-subtitle h3 {
+  font-size: var(--specifics-titlesize);
+  line-height: var(--specifics-titleheight);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.effect-subtitle p {
+  font-size: var(--specifics-textsize);
+  line-height: var(--specifics-textheight);
+  font-weight: var(--specifics-textweight);
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+/*faq*/
+
+.faq-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-up {
+  margin: 0 0 50px 0;
+}
+
+.faq-up h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+.faq-up p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.faq-lists {
+  border-bottom: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+
+.faq-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 0 22px 0;
+  gap: 16px;
+}
+
+.faq-title i {
+  font-size: 24px;
+  color: #02897a;
+}
+
+.faq-title h4 {
+  font-size: var(--text-text-hero);
+  line-height: var(--height-text-hero);
+  font-weight: var(--weight-text-hero);
+  color: var(--text-color);
+}
+
+.faq-panel p {
+  color: var(--text-color);
+}

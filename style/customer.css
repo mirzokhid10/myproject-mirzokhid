@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --enterprice-bg: linear-gradient(
+    180deg,
+    #f7f7f7 0%,
+    rgba(247, 247, 247, 0) 100%
+  );
+  --bg-color: #02897a;
+  --padding-herobtn: 15px 40px;
+  --padding-headerbtn: 10px 24px;
+  /*section title*/
+  --outer-titlesize: 32px;
+  --outer-titleheight: 48px;
+  --outer-titleweight: 700;
+
+  /*section title*/
+  /*specifics*/
+  --specifics-titlesize: 24px;
+  --specifics-titleheight: 33px;
+  --specifics-titleweight: 600;
+
+  --specifics-textsize: 16px;
+  --specifics-textheight: 26px;
+  --specifics-textweight: 400;
+  /*specifics*/
+  /*managment*/
+  --management-textsize: 16px;
+  --management-textheight: 24px;
+  --management-textweight: 600;
+
+  --managment-subtitlesize: 16px;
+  --managment-subtitleheight: 26px;
+  --managment-subtitleweight: 600;
+  /*managment*/
+  /* hero */
+  --text-text-hero: 18px;
+  --height-text-hero: 28px;
+  --weight-text-hero: 400;
+
+  --text-title-hero: 38px;
+  --height-title-hero: 60px;
+  --weight-title-hero: 700;
+  /* hero */
+  --bg-color: #02897a;
+
+  --inner-titlesize: 24px;
+  --inner-titleheight: 40px;
+  --inner-titleweight: 700;
+}
+
+.dark {
+  --enterprice-bg: #22343d;
+  --menu-bgcolor: #173a56;
+  --body-background: #1f2e35;
+  --text-color: #fff;
+  --slider-background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*clients*/
+
+.clients-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.clients-up h1 {
+  font-size: var(--text-title-hero);
+  line-height: var(--height-title-hero);
+  font-weight: var(--weight-title-hero);
+  color: var(--text-color);
+  margin: 0 0 70px 0;
+}
+
+.clients-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.clients-imgs a img {
+  width: 160px;
+  max-width: 160px;
+  height: auto;
+}
+
+.whychoose {
+  background-color: var(--enterprice-bg);
+}
+
+.clients-below {
+  padding: 24px 0 70px 0;
+}
+
+.clients-below h1 {
+  font-size: var(--text-title-hero);
+  line-height: var(--height-title-hero);
+  font-weight: var(--weight-title-hero);
+  text-align: center;
+  color: var(--text-color);
+  margin: 0 0 50px 0;
+}
+
+.clients-items {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.client-lists {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 32px 38px 34px;
+  color: var(--text-color);
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+/*prowork-inner*/
+
+.prowork__steps {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+  gap: 100px;
+  align-items: center;
+}
+
+.prowork__steps > div {
+  width: 50%;
+}
+
+.prowork-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prowork-inner h1 {
+  font-size: var(--text-title-hero);
+  line-height: var(--height-title-hero);
+  font-weight: var(--weight-title-hero);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.steps-text h1 {
+  font-size: var(--text-text-hero);
+  line-height: var(--height-text-hero);
+  font-weight: var(--weight-text-hero);
+  text-align: left;
+  color: var(--text-color);
+}
+
+.steps-text {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.steps-text h2 {
+  font-size: var(--specifics-titlesize);
+  line-height: var(--specifics-titleheight);
+  font-weight: var(--specifics-titleweight);
+  text-align: left;
+  color: var(--text-color);
+}
+
+.steps-text p {
+  font-size: var(--managment-subtitlesize);
+  line-height: var(--managment-subtitleheight);
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.steps-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/*offers*/
+
+.offers {
+  padding: 35px 0 45px;
+  background-color: var(--enterprice-bg);
+}
+
+.offers-row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.offers-title {
+  margin: 0 0 100px 0;
+}
+
+.offers-row > div {
+  width: 50%;
+}
+
+.offers-row div img {
+  width: 150px;
+  height: 150px;
+}
+
+.offers-row div h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 27px 0 16px 0;
+}
+
+.offers-row div p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--text-color);
+  margin: 8px 0;
+}
+
+.offers-row div h3 {
+  font-size: var(--specifics-textsize);
+  line-height: var(--specifics-textheight);
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 12px 0 0 0;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 992px) {
+  /*prowork*/
+
+  .prowork__steps {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /**clients*/
+
+  .clients-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .clients-imgs a {
+    width: 30%;
+  }
+
+  .clients-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*prowokk*/
+
+  .prowork__steps {
+    gap: 0px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /*clients*/
+
+  .clients-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .clients-imgs a {
+    width: 40%;
+  }
+
+  /*proworks*/
+
+  .prowork-inner h1 {
+    margin: 0 0 50px 0;
+  }
+
+  .prowork__steps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .prowork__steps:nth-child(3) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .prowork__steps > div {
+    width: 100%;
+  }
+
+  /*offers*/
+
+  .offers-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .offers-row > div {
+    width: 100%;
+  }
+}
