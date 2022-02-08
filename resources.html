@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
 
-    <!--font link-->
     <!--cdnjs link-->
     <link
       rel="stylesheet"
@@ -20,10 +19,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--cdnjs link-->
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/pricing.css" />
     <link rel="stylesheet" href="./style/resources.css" />
     <link rel="stylesheet" href="./style/customer.css" />
+    <!--flexboxgrid-->
+    <link rel="stylesheet" href="./style/flexboxgrid.min.css" />
     <title>My Product</title>
   </head>
   <body>
@@ -85,8 +87,10 @@
     <main class="main">
       <section class="business section">
         <div class="business-container container">
-          <div class="business-inner">
-            <div class="business-content">
+          <div class="business-inner row center-xs">
+            <div
+              class="business-content col-sm-12 col-md-6 col-lg-6 start-lg start-md center-xs center-sm"
+            >
               <h1>
                 Great Business <br />
                 made with Product.
@@ -104,7 +108,9 @@
                 />
                 <button type="submit">join now</button>
               </form>
-              <div class="business-followers">
+              <div
+                class="business-followers center-xs center-sm start-md start-mlg center-md"
+              >
                 <div class="business-followers__imgs">
                   <a href="#">
                     <img src="./images/follower1.png" alt="follower1"
@@ -119,7 +125,7 @@
                 <p>Join over <span>4,000</span>+ other</p>
               </div>
             </div>
-            <div class="business-img">
+            <div class="business-img col-sm-12 col-md-6 col-lg-6">
               <img src="./images/resoures.png" alt="resoures" />
             </div>
           </div>
@@ -134,7 +140,7 @@
               We focus on ergonomics and meeting you where you work. It's only a
               keystroke away.
             </p>
-            <div class="stories-lists">
+            <div class="stories-lists center-xs">
               <div class="stories-items">
                 <img src="./images/stories1.png" alt="stories1" />
                 <div class="stories-text">
